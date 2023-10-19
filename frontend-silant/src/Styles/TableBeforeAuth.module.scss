@@ -1,0 +1,28 @@
+@import "variables.module";
+
+.table {
+    @include table
+}
+
+.thead {
+    background-color: $base-blue;
+    color: white;
+    font-size: $font-size-thead;
+
+    th {
+        border: 2px solid $base-red;
+    }
+}
+
+.tbody {
+    background-color: white;
+    color: black;
+    font-size: $font-size-tbody;
+    text-align: center;
+
+    td {
+        height: 45px;
+        border: 2px solid $base-red;
+
+    }
+}

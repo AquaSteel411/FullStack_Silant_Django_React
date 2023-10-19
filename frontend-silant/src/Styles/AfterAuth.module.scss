@@ -1,0 +1,44 @@
+@import "variables.module";
+@import "mixins.module";
+
+.main {
+    @include base-text
+}
+
+.h3 {
+    @include h3;
+    width: clamp(250px, 80%, 90vw);
+}
+
+.switchTable {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: clamp(300px, 90%, 600px);
+    height: 60px;
+    margin: 30px auto;
+
+    button {
+        width: clamp(90px, 30%, 150px);
+        height: clamp(30px, 100%, 60px);
+        font-size: clamp(12px, 3vw, 18px);
+        border-radius: 10px;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+        border: 1px solid $base-blue;
+        box-sizing: border-box;
+        font-family: $font-regular;
+        cursor: pointer;
+    }
+}
+
+
+.activeBtn {
+    background-color: $base-blue;
+    border: 1px solid white;
+    color: white;
+}
+
+.active {
+    display: block !important;
+}
+

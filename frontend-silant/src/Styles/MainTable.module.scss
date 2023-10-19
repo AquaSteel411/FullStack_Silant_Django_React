@@ -1,0 +1,51 @@
+@import "variables.module";
+@import "mixins.module";
+
+.table {
+    @include table;
+}
+
+.thead {
+    background-color: $base-blue;
+    color: white;
+    font-size: clamp(8px, 2vw, 14px);
+    th {
+        border: 2px solid $base-red;
+    }
+}
+
+.tbody {
+    background-color: white;
+    color: black;
+    font-size: clamp(8px, 2vw, 14px);
+    text-align: center;
+
+    td {
+        height: 45px;
+        border: 2px solid $base-red;
+        cursor: pointer;
+
+    }
+}
+
+.activeSort {
+    color: $base-red;
+}
+
+.section {
+    display: none;
+}
+
+.manageData {
+    @include manage-data()
+}
+
+.addMachine {
+    @include add-record($base-blue)
+}
+
+.addMachine:hover {
+    opacity: 0.9;
+    border: 2px solid $base-red;
+}
+

@@ -1,0 +1,39 @@
+@import "variables.module";
+@import "mixins.module";
+
+.main {
+    margin: 0 $margin 70px;
+}
+
+.h3 {
+    align-items: center;
+    text-align: center;
+}
+
+.section {
+    @include section-create()
+}
+
+.label {
+    @include label-create()
+}
+
+.input {
+    @include input-create()
+}
+
+.textArea {
+    @include text-area-create()
+}
+
+.select {
+    @include select-create()
+}
+
+.btnCreate {
+    @include btn-create()
+}
+
+.btnCreate:hover {
+    opacity: 0.9;
+}

@@ -1,0 +1,22 @@
+@import "variables.module";
+@import "mixins.module";
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: $font-regular;
+    font-size: clamp(12px, 3vw, 18px);
+    margin: 15px 0;
+}
+
+.input {
+    width: clamp(150px, 100%, 300px);
+    height: 35px;
+    padding-left: 10px;
+    font-family: $font-regular;
+    font-size: clamp(12px, 3vw, 18px);
+    margin-left: 10px;
+    box-sizing: border-box;
+}

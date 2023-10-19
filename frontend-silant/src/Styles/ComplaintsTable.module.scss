@@ -1,0 +1,50 @@
+@import "variables.module";
+@import "mixins.module";
+
+
+.table {
+    @include table;
+}
+
+.thead {
+    background-color: $base-blue;
+    color: white;
+    font-size: clamp(10px, 3vw, 16px);
+    height: 55px;
+    th {
+        border: 2px solid $base-red;
+    }
+}
+
+.tbody {
+    background-color: white;
+    color: black;
+    font-size: clamp(10px, 3vw, 16px);
+    text-align: center;
+
+    td {
+        height: 45px;
+        border: 2px solid $base-red;
+    }
+}
+
+.activeSort {
+    color: $base-red;
+}
+
+.section {
+    display: none;
+}
+
+.manageData {
+    @include manage-data()
+}
+
+.addComplaint {
+    @include add-record($base-red)
+}
+
+.addComplaint:hover {
+    opacity: 0.8;
+    border: 2px solid $base-blue;
+}

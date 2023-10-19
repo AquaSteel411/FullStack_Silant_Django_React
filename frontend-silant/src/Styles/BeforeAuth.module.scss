@@ -1,0 +1,53 @@
+@import "variables.module";
+@import "mixins.module";
+
+.main {
+    margin-top: 50px;
+    position: relative;
+    min-height: 70vh;
+    flex-grow: 1;
+}
+
+.h3 {
+    font-size: clamp(16px, 3vw, 24px);
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.inputSection {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    & > * {
+        font-size: $font-size-text;
+    }
+}
+
+.inputNumber {
+    width: 300px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-right: 25px;
+    padding-left: 15px;
+}
+
+.btnSearch {
+    width: 80px;
+    height: 40px;
+    box-sizing: border-box;
+    background-color: $base-blue;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.p {
+    font-size: clamp(14px, 3vw, 20px);
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+}

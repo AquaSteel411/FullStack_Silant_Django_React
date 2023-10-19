@@ -1,0 +1,22 @@
+@import "variables.module";
+
+.footer {
+    height: 70px;
+    background-color: $base-blue;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.leftText {
+    margin-left: $margin;
+    font-size: $font-size-footer;
+}
+
+.rightText {
+    margin-right: $margin;
+    font-size: $font-size-footer;
+
+}

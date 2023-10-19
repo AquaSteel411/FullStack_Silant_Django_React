@@ -1,0 +1,88 @@
+@import "variables.module";
+
+.container {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(17, 17, 17, 0.5);
+    transition: all 0.5s ease;
+    z-index: 1;
+}
+
+.auth {
+    display: none;
+    width: 379px;
+    height: 300px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.closeSvg {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.text {
+    color: gray;
+    font-family: $font-regular;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+}
+
+.inputForm {
+    width: 379px;
+    height: 43px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background: white;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+    padding: 0 0 0 10px;
+    margin: 15px 0 18px;
+}
+
+.inputFormError {
+    border: 1px solid #bc2525;
+}
+
+.textError {
+    color: #bc2525;
+    margin: -8.5px 0;
+    font-size: 15px;
+}
+
+.enter {
+    width: 379px;
+    height: 59px;
+    border: none;
+    border-radius: 5px;
+    background: $base-blue;
+    color: white;
+    margin: 20px 0 10px;
+    padding: 0;
+    cursor: pointer;
+}

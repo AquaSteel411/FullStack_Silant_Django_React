@@ -1,0 +1,38 @@
+@import "mixins.module";
+
+@font-face {
+    font-family: 'Astra-Bold';
+    src: url('/./fonts/PT-Astra-Sans_Bold.ttf') format('ttf')
+}
+
+@font-face {
+    font-family: 'Astra-Bold-Italic';
+    src: url('/./fonts/PT-Astra-Sans_Bold-Italic.ttf') format('ttf')
+}
+
+@font-face {
+    font-family: 'Astra-Italic';
+    src: url('/./fonts/PT-Astra-Sans_Italic.ttf') format('ttf')
+}
+
+@font-face {
+    font-family: 'Astra-Regular';
+    src: url('/./fonts/PT-Astra-Sans_Regular.ttf') format('ttf')
+}
+
+$base-blue: #163E6C;
+$base-red: #D20A11;
+$base-white: #EBE6D6;
+
+$font-regular: Astra-Regular, sans-serif;
+$font-bold: Astra-Bold, sans-serif;
+$font-bold-italic: Astra-Bold-Italic, sans-serif;
+$font-italic: Astra-Italic, sans-serif;
+
+$font-size-text: clamp(14px, 3vw, 20px);
+$font-size-thead: clamp(12px, 3vw, 18px);
+$font-size-tbody: clamp(10px, 3vw, 16px);
+
+$font-size-footer: clamp(10px, 3vw, 16px);
+
+$margin: clamp(14px, 3vw, 60px);

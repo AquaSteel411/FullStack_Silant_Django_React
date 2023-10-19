@@ -1,0 +1,29 @@
+@import "variables.module";
+@import "mixins.module";
+
+.h3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.table {
+    @include table;
+
+    tr {
+        height: 60px;
+        font-size: clamp(12px, 3vw, 18px);
+        th {
+            width: clamp(90px, 3vw, 200px);
+            color: white;
+            background-color: $base-blue;
+            border: 2px solid $base-red;
+        }
+        td {
+            color: black;
+            background-color: white;
+            border: 2px solid $base-red;
+            text-align: center;
+        }
+    }
+}
